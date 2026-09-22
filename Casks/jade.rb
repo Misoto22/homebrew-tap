@@ -1,6 +1,6 @@
 cask "jade" do
-  version "0.1.1"
-  sha256 "7e82ae42ce73bd8cb12639b03dbe430591b9c248c124bf1504a479279e0764d7"
+  version "0.2.0"
+  sha256 "fa8ed8ca6eb649efcc2246351894d039cbea8f8e125b8d4b2d6bd532c34cfe24"
 
   url "https://github.com/Misoto22/jade/releases/download/v#{version}/Jade-#{version}.dmg"
   name "Jade"
