@@ -1,6 +1,6 @@
 cask "jade" do
-  version "0.5.0"
-  sha256 "0e69fdcab657074b85e82aa6879e65cebf242e9d33c045b3f96887eb744f629b"
+  version "0.6.0"
+  sha256 "26134b607bcbd1139e5b389da6698fffff6d734358a3ee419110610d3398bbff"
 
   url "https://github.com/jade-pet/jade-macos/releases/download/v#{version}/Jade-#{version}.dmg"
   name "Jade"
