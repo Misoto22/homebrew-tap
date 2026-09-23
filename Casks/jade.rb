@@ -1,11 +1,11 @@
 cask "jade" do
-  version "0.3.0"
-  sha256 "994a260c540ed391e282f3483333232d8698a77d88f780cf1a978cebb8987e9e"
+  version "0.4.0"
+  sha256 "f61f903b953620b9cc9ecbb2cbbed8a4c4545331636b28ca924de1b1bd29b13b"
 
-  url "https://github.com/Misoto22/jade/releases/download/v#{version}/Jade-#{version}.dmg"
+  url "https://github.com/jade-pet/jade-macos/releases/download/v#{version}/Jade-#{version}.dmg"
   name "Jade"
-  desc "Break reminder with a resident desktop cat"
-  homepage "https://github.com/Misoto22/jade"
+  desc "Desktop cat and break reminder, companion to the Jade mood diary"
+  homepage "https://github.com/jade-pet/jade-macos"
 
   livecheck do
     url :url
@@ -23,10 +23,14 @@ cask "jade" do
     run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Jade.app"]
   end
 
-  uninstall quit: "io.github.misoto22.jade-gatekeeper"
+  uninstall quit: [
+    "io.github.jade-pet.jade",
+    "io.github.misoto22.jade-gatekeeper",
+  ]
 
   zap trash: [
     "~/Library/Application Support/Jade",
+    "~/Library/Preferences/io.github.jade-pet.jade.plist",
     "~/Library/Preferences/io.github.misoto22.jade-gatekeeper.plist",
   ]
 end
