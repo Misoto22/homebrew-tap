@@ -1,6 +1,6 @@
 cask "jade" do
-  version "0.8.0"
-  sha256 "42f153588031eb4492d899449bd29bcb9acf3eb93deb54a9879fc3cc3d47fb6a"
+  version "0.8.1"
+  sha256 "0dafccad3f0b50c22daf37452c572c95e30c9780c323b82e53cfe1673ed4532f"
 
   url "https://github.com/jade-pet/jade-releases/releases/download/v#{version}/Jade-#{version}.dmg"
   name "Jade"
@@ -12,7 +12,7 @@ cask "jade" do
     strategy :github_latest
   end
 
-  depends_on macos: :tahoe
+  depends_on macos: :sonoma
 
   app "Jade.app"
 
