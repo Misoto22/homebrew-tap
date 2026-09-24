@@ -2,7 +2,7 @@ cask "jade" do
   version "0.8.1"
   sha256 "0dafccad3f0b50c22daf37452c572c95e30c9780c323b82e53cfe1673ed4532f"
 
-  url "https://github.com/jade-pet/jade-releases/releases/download/v#{version}/Jade-#{version}.dmg"
+  url "https://github.com/jade-the-cat/jade-releases/releases/download/v#{version}/Jade-#{version}.dmg"
   name "Jade"
   desc "Desktop cat and break reminder, companion to the Jade mood diary"
   homepage "https://jadethecat.com"
