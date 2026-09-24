@@ -2,10 +2,10 @@ cask "jade" do
   version "0.8.0"
   sha256 "42f153588031eb4492d899449bd29bcb9acf3eb93deb54a9879fc3cc3d47fb6a"
 
-  url "https://github.com/jade-pet/jade-macos/releases/download/v#{version}/Jade-#{version}.dmg"
+  url "https://github.com/jade-pet/jade-releases/releases/download/v#{version}/Jade-#{version}.dmg"
   name "Jade"
   desc "Desktop cat and break reminder, companion to the Jade mood diary"
-  homepage "https://github.com/jade-pet/jade-macos"
+  homepage "https://jadethecat.com"
 
   livecheck do
     url :url
